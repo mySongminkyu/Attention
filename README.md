@@ -20,7 +20,9 @@ Attention is all you need
 
   위는 RNN 구조 도식화 
   output으로 hidden state가 나오는 것을 볼 수 있는데 이 때문에 위의 Encoder Decoder 구조에서 각각의 out이 hidden state의 형태로 출력됨.
+  
   유의할 점은 Encoder의 경우 모든 RNN셀의 hidden states들을 사용하는 반면, decoder의 경우 현재 RNN셀의 hidden state만을 사용.
+  
   이유는 번역 attention을 예로 들면 Target sequence의 한 단어와 source sequence의 모든 단어의 attention 상관관계를 비교하기 때문임.
   (여기서 hidden state는 압축된 문맥으로 해석 가능)
 
